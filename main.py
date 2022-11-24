@@ -71,7 +71,7 @@ def quicksort(mas):
 
 
 timed_quicksort = timer(quicksort)
-a = [r(0, 1000) for i in range(1000000)]
+a = [r(0, 1000) for i in range(1000)]
 mas = list(map(prep, a))
 #print(a)
 radix(mas)

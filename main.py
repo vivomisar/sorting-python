@@ -69,10 +69,14 @@ def quicksort(mas):
             equal.append(i)
     return quicksort(less) + equal + quicksort(greater)
 
+def __main__():
+    timed_quicksort = timer(quicksort)
+    a = [r(0, 1000) for i in range(1000)]
+    mas = list(map(prep, a))
+    #print(a)
+    radix(mas)
+    timed_quicksort(a)
 
-timed_quicksort = timer(quicksort)
-a = [r(0, 1000) for i in range(1000)]
-mas = list(map(prep, a))
-#print(a)
-radix(mas)
-timed_quicksort(a)
+if __name__ == "__main__":
+    __main__()
+
